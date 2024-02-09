@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Nunito-Bold.ttf</file>
+        <file>fonts/Montserrat-Bold.ttf</file>
+        <file>fonts/Montserrat-SemiBold.ttf</file>
+        <file>fonts/Roboto-Bold.ttf</file>
+        <file>fonts/Roboto-Medium.ttf</file>
+        <file>fonts/SourceSans3-Bold.ttf</file>
+        <file>fonts/SourceSans3-SemiBold.ttf</file>
+    </qresource>
+</RCC>

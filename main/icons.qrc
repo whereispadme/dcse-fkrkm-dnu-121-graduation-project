@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/hidden.png</file>
+        <file>icons/visible.png</file>
+        <file>icons/createclient.png</file>
+        <file>icons/resetmedicaldata.png</file>
+        <file>icons/search.png</file>
+        <file>icons/subclient.png</file>
+        <file>icons/mainwindow.png</file>
+    </qresource>
+</RCC>

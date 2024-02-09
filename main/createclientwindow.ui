@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateClientWindow</class>
+ <widget class="QMainWindow" name="CreateClientWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>693</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>771</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="medicalDataWidget">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>0</y>
+        <width>611</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;Медична довідка&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>611</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QLabel" name="doctor">
+         <property name="text">
+          <string>ПІБ лікаря</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="enddate">
+         <property name="text">
+          <string>Дата кінця дії</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="startdate">
+         <property name="text">
+          <string>Дата початку дії</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QDateEdit" name="startDateEdit">
+         <property name="displayFormat">
+          <string>yyyy.MM.dd</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="doctorLineEdit"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="decision">
+         <property name="text">
+          <string>Висновок лікаря</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="institution">
+         <property name="text">
+          <string>Заклад, що видав</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="decisionLineEdit"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="institutionLineEdit"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QDateEdit" name="endDateEdit">
+         <property name="displayFormat">
+          <string>yyyy.MM.dd</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="createClientPushButton">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>560</y>
+        <width>611</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Підтвердити та зареєструвати клієнта</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="clientWidget">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>530</y>
+        <width>611</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="maleRadioButton">
+         <property name="text">
+          <string>Чоловіча стать</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="femaleRadioButton">
+         <property name="text">
+          <string>Жіноча стать</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>0</y>
+        <width>611</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;Реєстрація клієнта&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>611</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="firstname">
+         <property name="text">
+          <string>Ім'я</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="passportLineEdit"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lastnameLineEdit"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="telephone">
+         <property name="text">
+          <string>Номер телефона</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="middlenameLineEdit"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="firstnameLineEdit"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="passport">
+         <property name="text">
+          <string>Номер паспорта</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lastname">
+         <property name="text">
+          <string>Прізвище</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="telephoneLineEdit"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="middlename">
+         <property name="text">
+          <string>По батькові</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="birthday">
+         <property name="text">
+          <string>Дата народження</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDateEdit" name="birthdayDateEdit">
+         <property name="displayFormat">
+          <string>yyyy.MM.dd</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="applyPushButton">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>610</y>
+        <width>611</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Підтвердити та перейти до заповнення медичної довідки</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
